@@ -1,79 +1,114 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html><html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Suplementos Pinheiro</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mais Saúde - Suplementos</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 0; padding: 0;
-      background-color: #f9f9f9;
+      margin: 0;
+      background-color: #f5f5f5;
     }
     header {
-      background-color: #202020;
+      background-color: #2a9d8f;
       color: white;
       padding: 20px;
       text-align: center;
     }
     .container {
-      padding: 20px;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 20px;
+      padding: 20px;
     }
     .product {
       background: white;
       border-radius: 10px;
       padding: 15px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
       text-align: center;
     }
     .product img {
       width: 100%;
-      max-height: 200px;
-      object-fit: contain;
-      margin-bottom: 10px;
+      max-width: 250px;
+      height: auto;
     }
     .btn {
-      background-color: #25D366;
+      background-color: #28a745;
       color: white;
-      padding: 10px;
+      padding: 10px 15px;
       border: none;
       border-radius: 5px;
       text-decoration: none;
       display: inline-block;
       margin-top: 10px;
     }
+    .price {
+      margin: 10px 0;
+    }
+    .note {
+      font-size: 0.9em;
+      color: #555;
+      margin-top: 20px;
+      padding: 0 20px 20px;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Suplementos Pinheiro</h1>
-    <p>Compre suplementos com entrega em Pinheiro - MA</p>
+    <h1>Mais Saúde</h1>
+    <p>Compre suplementos com entrega em Pinheiro - MA e para todo o Brasil</p>
   </header>
-  <div class="container">
-    
-    <!-- Produto 1 -->
-    <div class="product">
-      <img src="https://via.placeholder.com/250x200.png?text=Whey+Protein" alt="Whey Protein" />
-      <h3>Whey Protein</h3>
-      <p>Suplemento proteico para ganho de massa muscular.</p>
-      <p><strong>R$150</strong></p>
-      <a class="btn" href="https://wa.me/5598987520478?text=Olá! Tenho interesse no Whey Protein." target="_blank">Comprar pelo WhatsApp</a>
-    </div>
+  <div class="container"><!-- Produto 1: Cloreto de Magnésio -->
+<div class="product">
+  <img src="https://via.placeholder.com/250x250?text=Cloreto+de+Magn%C3%A9sio" alt="Cloreto de Magnésio">
+  <h3>Cloreto de Magnésio</h3>
+  <p>Ideal para aliviar dores na coluna, hérnia de disco, bico de papagaio, nervo ciático e articulações. Também auxilia na saúde do coração.</p>
+  <div class="price">
+    <p><strong>À Vista:</strong> R$65 <a class="btn" href="https://wa.me/5598987520478?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Cloreto%20de%20Magn%C3%A9sio.%20Gostaria%20de%20comprar%20%C3%A0%20vista." target="_blank">Comprar pelo WhatsApp</a></p>
+    <p><strong>A Prazo:</strong> R$100</p>
+  </div>
+</div>
 
-    <!-- Produto 2 -->
-    <div class="product">
-      <img src="https://via.placeholder.com/250x200.png?text=Creatina" alt="Creatina" />
-      <h3>Creatina</h3>
-      <p>Aumenta força, explosão muscular e recuperação.</p>
-      <p><strong>R$80</strong></p>
-      <a class="btn" href="https://wa.me/5598987520478?text=Olá! Tenho interesse na Creatina." target="_blank">Comprar pelo WhatsApp</a>
-    </div>
+<!-- Produto 2: Fortgan Hair -->
+<div class="product">
+  <img src="https://via.placeholder.com/250x250?text=Fortgan+Hair" alt="Fortgan Hair">
+  <h3>Fortgan Hair</h3>
+  <p>Suplemento avançado para fortalecimento dos cabelos, pele e unhas. Reduz a queda e auxilia na produção saudável de sebo capilar.</p>
+  <div class="price">
+    <p><strong>À Vista:</strong> R$90 <a class="btn" href="https://wa.me/5598987520478?text=Quero%20comprar%20o%20Fortgan%20Hair%20%C3%A0%20vista." target="_blank">Comprar pelo WhatsApp</a></p>
+    <p><strong>A Prazo:</strong> R$120</p>
+  </div>
+</div>
 
-    <!-- Adicione mais produtos aqui copiando o bloco acima -->
-    
+<!-- Produto 3: Gerogan Stress -->
+<div class="product">
+  <img src="https://via.placeholder.com/250x250?text=Gerogan+Stress" alt="Gerogan Stress">
+  <h3>Gerogan Stress</h3>
+  <p>Ajuda no controle do estresse, ansiedade e depressão. Melhora memória, sono e disposição mental. Um aliado contra o cansaço diário.</p>
+  <div class="price">
+    <p><strong>À Vista:</strong> R$70 <a class="btn" href="https://wa.me/5598987520478?text=Quero%20comprar%20o%20Gerogan%20Stress%20%C3%A0%20vista." target="_blank">Comprar pelo WhatsApp</a></p>
+    <p><strong>A Prazo:</strong> R$110</p>
+  </div>
+</div>
+
+<!-- Produto 4: Fortgan Mulher -->
+<div class="product">
+  <img src="https://via.placeholder.com/250x250?text=Fortgan+Mulher" alt="Fortgan Mulher">
+  <h3>Fortgan Mulher</h3>
+  <p>Desenvolvido especialmente para o cuidado da saúde da mulher. Ajuda no equilíbrio hormonal, saúde da pele, disposição e bem-estar.</p>
+  <div class="price">
+    <p><strong>À Vista:</strong> R$65 <a class="btn" href="https://wa.me/5598987520478?text=Quero%20comprar%20o%20Fortgan%20Mulher%20%C3%A0%20vista." target="_blank">Comprar pelo WhatsApp</a></p>
+    <p><strong>A Prazo:</strong> R$95</p>
+  </div>
+</div>
+
+  </div>
+  <div class="note">
+    <p><strong>IMPORTANTE:</strong> O valor a prazo é para pagamento único após 3 meses e está disponível apenas para moradores de Pinheiro - MA.</p>
+    <p>Para outras cidades, apenas vendas à vista. Enviamos para todo o Brasil. <br>
+    <strong>Taxa de entrega:</strong> calculada conforme distância ou tipo de envio (motoboy local ou Correios).</p>
   </div>
 </body>
 </html>
