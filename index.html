@@ -1,114 +1,98 @@
-<!DOCTYPE html><html lang="pt-br">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mais Saúde - Suplementos</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Drone Profissional - Mais Saúde</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background-color: #f5f5f5;
-    }
-    header {
-      background-color: #2a9d8f;
-      color: white;
-      padding: 20px;
-      text-align: center;
+      padding: 0;
+      background-color: #eeeeee;
     }
     .container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
+      max-width: 900px;
+      margin: auto;
+      background-color: white;
       padding: 20px;
     }
-    .product {
-      background: white;
-      border-radius: 10px;
-      padding: 15px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-    .product img {
+    .product-image {
       width: 100%;
-      max-width: 250px;
-      height: auto;
+      max-height: 500px;
+      object-fit: cover;
+      border-radius: 10px;
     }
-    .btn {
-      background-color: #28a745;
-      color: white;
-      padding: 10px 15px;
-      border: none;
-      border-radius: 5px;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 10px;
+    h1 {
+      font-size: 28px;
+      margin-top: 20px;
+      color: #333;
     }
     .price {
+      font-size: 26px;
+      color: #00a650;
+      font-weight: bold;
       margin: 10px 0;
     }
-    .note {
-      font-size: 0.9em;
-      color: #555;
+    .price small {
+      font-size: 16px;
+      color: #999;
+    }
+    .description {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #444;
       margin-top: 20px;
-      padding: 0 20px 20px;
-      text-align: center;
+    }
+    .buy-button {
+      display: inline-block;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-radius: 6px;
+      margin-top: 30px;
+      font-size: 16px;
+    }
+    .info-box {
+      background: #f4f4f4;
+      border-left: 4px solid #00a650;
+      padding: 10px 15px;
+      margin-top: 20px;
+      color: #333;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Mais Saúde</h1>
-    <p>Compre suplementos com entrega em Pinheiro - MA e para todo o Brasil</p>
-  </header>
-  <div class="container"><!-- Produto 1: Cloreto de Magnésio -->
-<div class="product">
-  <img src="https://via.placeholder.com/250x250?text=Cloreto+de+Magn%C3%A9sio" alt="Cloreto de Magnésio">
-  <h3>Cloreto de Magnésio</h3>
-  <p>Ideal para aliviar dores na coluna, hérnia de disco, bico de papagaio, nervo ciático e articulações. Também auxilia na saúde do coração.</p>
-  <div class="price">
-    <p><strong>À Vista:</strong> R$65 <a class="btn" href="https://wa.me/5598987520478?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Cloreto%20de%20Magn%C3%A9sio.%20Gostaria%20de%20comprar%20%C3%A0%20vista." target="_blank">Comprar pelo WhatsApp</a></p>
-    <p><strong>A Prazo:</strong> R$100</p>
-  </div>
-</div>
+  <div class="container">
+    <img src="https://via.placeholder.com/800x500.png?text=DRONE+PROFISSIONAL" alt="Drone Profissional" class="product-image" />
 
-<!-- Produto 2: Fortgan Hair -->
-<div class="product">
-  <img src="https://via.placeholder.com/250x250?text=Fortgan+Hair" alt="Fortgan Hair">
-  <h3>Fortgan Hair</h3>
-  <p>Suplemento avançado para fortalecimento dos cabelos, pele e unhas. Reduz a queda e auxilia na produção saudável de sebo capilar.</p>
-  <div class="price">
-    <p><strong>À Vista:</strong> R$90 <a class="btn" href="https://wa.me/5598987520478?text=Quero%20comprar%20o%20Fortgan%20Hair%20%C3%A0%20vista." target="_blank">Comprar pelo WhatsApp</a></p>
-    <p><strong>A Prazo:</strong> R$120</p>
-  </div>
-</div>
+    <h1>Drone Profissional 4K GPS com Câmera HD e Retorno Automático</h1>
 
-<!-- Produto 3: Gerogan Stress -->
-<div class="product">
-  <img src="https://via.placeholder.com/250x250?text=Gerogan+Stress" alt="Gerogan Stress">
-  <h3>Gerogan Stress</h3>
-  <p>Ajuda no controle do estresse, ansiedade e depressão. Melhora memória, sono e disposição mental. Um aliado contra o cansaço diário.</p>
-  <div class="price">
-    <p><strong>À Vista:</strong> R$70 <a class="btn" href="https://wa.me/5598987520478?text=Quero%20comprar%20o%20Gerogan%20Stress%20%C3%A0%20vista." target="_blank">Comprar pelo WhatsApp</a></p>
-    <p><strong>A Prazo:</strong> R$110</p>
-  </div>
-</div>
+    <div class="price">
+      R$ 4.500 <small>à vista</small><br>
+      R$ 5.000 <small>a prazo (pagamento único após 3 meses)</small>
+    </div>
 
-<!-- Produto 4: Fortgan Mulher -->
-<div class="product">
-  <img src="https://via.placeholder.com/250x250?text=Fortgan+Mulher" alt="Fortgan Mulher">
-  <h3>Fortgan Mulher</h3>
-  <p>Desenvolvido especialmente para o cuidado da saúde da mulher. Ajuda no equilíbrio hormonal, saúde da pele, disposição e bem-estar.</p>
-  <div class="price">
-    <p><strong>À Vista:</strong> R$65 <a class="btn" href="https://wa.me/5598987520478?text=Quero%20comprar%20o%20Fortgan%20Mulher%20%C3%A0%20vista." target="_blank">Comprar pelo WhatsApp</a></p>
-    <p><strong>A Prazo:</strong> R$95</p>
-  </div>
-</div>
+    <div class="info-box">
+      📦 Entrega disponível para todo o Brasil.<br>
+      🕒 A prazo somente para moradores de Pinheiro - MA.<br>
+      🚚 Taxa de entrega calculada conforme a distância/localidade.
+    </div>
 
-  </div>
-  <div class="note">
-    <p><strong>IMPORTANTE:</strong> O valor a prazo é para pagamento único após 3 meses e está disponível apenas para moradores de Pinheiro - MA.</p>
-    <p>Para outras cidades, apenas vendas à vista. Enviamos para todo o Brasil. <br>
-    <strong>Taxa de entrega:</strong> calculada conforme distância ou tipo de envio (motoboy local ou Correios).</p>
+    <div class="description">
+      O drone profissional 4K com GPS é perfeito para filmagens aéreas com altíssima qualidade.<br><br>
+      Ele possui:<br>
+      - 📸 Câmera 4K com estabilização<br>
+      - 🛰️ GPS com retorno automático<br>
+      - 📶 Alcance de até 2 km<br>
+      - 🔋 Bateria de longa duração (até 25 minutos)<br>
+      - 🎮 Controle remoto com tela LCD<br><br>
+      Ideal para produtores de conteúdo, cinegrafistas, eventos, inspeções e lazer profissional.<br><br>
+      Aproveite agora com desconto à vista ou compre a prazo com total segurança!
+    </div>
+
+    <a class="buy-button" href="https://wa.me/5598999999999?text=Olá! Tenho interesse no Drone Profissional 4K com GPS de R$ 5.000. Queria saber mais detalhes." target="_blank">Falar com o vendedor no WhatsApp</a>
   </div>
 </body>
 </html>
