@@ -1,192 +1,127 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Desperta Slim - Emagreça com Saúde</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Desperta Slim</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom right, #6a0dad, #ff69b4, #ffffff);
-      color: #333;
-    }
-
-    header {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #6a00f4, #ff2d75);
+      color: #fff;
       text-align: center;
-      padding: 2rem;
-      color: white;
     }
 
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .produto {
-      max-width: 900px;
-      margin: 2rem auto;
+    .container {
       background: #fff;
-      border-radius: 30px;
-      padding: 2rem;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      align-items: center;
+      color: #333;
+      margin: 20px;
+      padding: 30px;
+      border-radius: 25px;
+      max-width: 800px;
+      margin: 40px auto;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     }
 
-    .produto img {
+    .title {
+      font-size: 3em;
+      margin-top: 50px;
+      font-weight: bold;
+    }
+
+    .subtitle {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 15px;
+      margin: 20px 0;
+    }
+
+    h2 {
+      color: #8000cc;
+    }
+
+    .price {
+      font-size: 1.5em;
+      color: #e60073;
+      font-weight: bold;
+    }
+
+    .whatsapp-button {
+      background-color: #25d366;
+      color: white;
+      padding: 15px 25px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      margin-top: 20px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .before-after {
+      display: grid;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .before-after img {
+      width: 100%;
       max-width: 300px;
       border-radius: 20px;
     }
 
     .info {
-      flex: 1;
+      text-align: left;
+      margin-top: 20px;
     }
 
-    .info h2 {
-      font-size: 2rem;
-      color: #6a0dad;
-    }
-
-    .info p {
-      margin: 1rem 0;
-      font-size: 1.1rem;
-    }
-
-    .preco {
-      font-size: 1.5rem;
-      font-weight: bold;
-      color: #ff1493;
-    }
-
-    .botao {
-      display: inline-block;
-      margin-top: 1.5rem;
-      background: #ff1493;
-      color: white;
-      padding: 1rem 2rem;
-      border-radius: 30px;
-      font-size: 1.2rem;
-      text-decoration: none;
-      transition: 0.3s;
-    }
-
-    .botao:hover {
-      background: #c71585;
-    }
-
-    .alerta {
-      background-color: #ffe4ec;
-      color: #6a0dad;
-      padding: 1rem;
-      border-radius: 20px;
-      margin-top: 1.5rem;
-      font-size: 1rem;
-    }
-
-    .seguro {
-      margin-top: 1rem;
-      font-size: 1rem;
-      color: green;
-    }
-
-    .beneficios {
-      max-width: 900px;
-      margin: 2rem auto;
-      background: #fff;
-      border-radius: 30px;
-      padding: 2rem;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    }
-
-    .beneficios h3 {
-      text-align: center;
-      color: #6a0dad;
-      margin-bottom: 1rem;
-    }
-
-    .beneficios ul {
-      font-size: 1.1rem;
-      line-height: 1.8;
-      padding-left: 1.2rem;
-    }
-
-    .resultados {
-      max-width: 1000px;
-      margin: 3rem auto;
-      padding: 2rem;
-      background: #fff;
-      border-radius: 30px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    }
-
-    .resultados h3 {
-      text-align: center;
-      color: #6a0dad;
-      margin-bottom: 2rem;
-    }
-
-    .antes-depois {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-      justify-items: center;
-    }
-
-    .antes-depois img {
-      width: 100%;
-      border-radius: 20px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-      object-fit: cover;
+    strong {
+      color: #8000cc;
     }
   </style>
 </head>
 <body>
+  <h1 class="title">Desperta Slim</h1>
+  <p class="subtitle">O suplemento natural que ajuda você a emagrecer com saúde!</p>
 
-  <header>
-    <h1>Desperta Slim</h1>
-    <p>O suplemento natural que ajuda você a emagrecer com saúde!</p>
-  </header>
+  <div class="container">
+    <img src="https://i.ibb.co/5xJtxw3/D-NQ-NP-975052-MLU75804317949-042024-O.webp" alt="Desperta Slim" />
 
-  <section class="produto">
-    <a href="https://ibb.co/QjxzjtV3"><img src="https://i.ibb.co/QjxzjtV3/D-NQ-NP-975052-MLU75804317949-042024-O.webp" alt="D-NQ-NP-975052-MLU75804317949-042024-O" border="0"></a>
+    <h2>Suplemento para Emagrecimento</h2>
+    <p>O Desperta Slim é um suplemento alimentar em cápsulas aprovado pela <strong>ANVISA</strong>, 100% natural e seguro. Ele combina ingredientes como <strong>L-Carnitina, Spirulina, Quitosana</strong> e <strong>Psyllium</strong> para ajudar na perda de peso com saúde.</p>
+
+    <p class="price">R$ 185,00</p>
+
+    <p><strong>Entrega para todo o Brasil</strong> (com taxa de entrega)</p>
+    <p><strong>Entrega grátis</strong> para moradores de <strong>Pinheiro-MA e região</strong></p>
+
+    <a class="whatsapp-button" href="https://wa.me/5598987520478?text=Estou%20interessado%20no%20produto%20para%20emagrecer.%20Como%20faço%20para%20me%20entregar%20esse%20produto%3F">
+      Eu quero
+    </a>
+
+    <div class="before-after">
+      <h2>Resultados de clientes</h2>
+      <img src="https://i.ibb.co/NCTWzCb/emagrece1.jpg" alt="Antes e Depois 1" />
+      <img src="https://i.ibb.co/m9D7wT9/emagrece2.jpg" alt="Antes e Depois 2" />
+      <img src="https://i.ibb.co/dkrPP3y/emagrece3.jpg" alt="Antes e Depois 3" />
+      <img src="https://i.ibb.co/QmD7w2q/emagrece4.jpg" alt="Antes e Depois 4" />
+    </div>
+
     <div class="info">
-      <h2>Suplemento para Emagrecimento</h2>
-      <p>O Desperta Slim é um suplemento alimentar em cápsulas aprovado pela <strong>ANVISA</strong>, 100% natural e seguro. Ele combina ingredientes como L-Carnitina, Spirulina, Quitosana e Psyllium para ajudar na perda de peso com saúde.</p>
-      <p class="preco">R$ 185,00</p>
-      <p><strong>Entrega para todo o Brasil</strong> (com taxa de entrega)</p>
-      <div class="alerta">
-        Entrega <strong>GRÁTIS</strong> para moradores de <strong>Pinheiro-MA</strong> e regiões próximas.  
-        <br>Demais localidades: entrega com taxa.
-      </div>
-      <div class="seguro">Produto registrado e aprovado pela ANVISA</div>
-      <a class="botao" href="https://wa.me/5598987520478?text=Estou%20interessado%20no%20produto%20para%20emagrecer.%20Como%20faço%20para%20receber%20esse%20produto%3F" target="_blank">Eu Quero</a>
+      <h3>Benefícios:</h3>
+      <ul>
+        <li>Redução de gordura corporal</li>
+        <li>Controle de apetite</li>
+        <li>Melhora do metabolismo</li>
+        <li>Mais energia no dia a dia</li>
+      </ul>
     </div>
-  </section>
-
-  <section class="beneficios">
-    <h3>Benefícios do Desperta Slim</h3>
-    <ul>
-      <li><strong>Picolinato de Cromo</strong> – Ajuda a reduzir o apetite e controlar a vontade de comer doces.</li>
-      <li><strong>L-Triptofano</strong> – Contribui para o bem-estar, ajudando a controlar a ansiedade e compulsão alimentar.</li>
-      <li><strong>L-Carnitina</strong> – Atua na queima de gordura e no aumento de energia.</li>
-      <li><strong>Quitosana</strong> – Auxilia na redução da absorção de gordura pelo organismo.</li>
-      <li><strong>Espirulina</strong> – Rica em nutrientes, ajuda na saciedade e reforça a imunidade.</li>
-      <li><strong>Psyllium</strong> – Regula o intestino e promove sensação de estômago cheio.</li>
-    </ul>
-  </section>
-
-  <section class="resultados">
-    <h3>Resultados Reais com Desperta Slim</h3>
-    <div class="antes-depois">
-      <img src="https://i.ibb.co/5nsBLzK/antes-depois1.jpg" alt="Antes e Depois 1" />
-      <img src="https://i.ibb.co/2c63yDs/antes-depois2.jpg" alt="Antes e Depois 2" />
-      <img src="https://i.ibb.co/DkR6R0z/antes-depois3.jpg" alt="Antes e Depois 3" />
-      <img src="https://i.ibb.co/YcKnDwn/antes-depois4.jpg" alt="Antes e Depois 4" />
-    </div>
-  </section>
-
+  </div>
 </body>
 </html>
